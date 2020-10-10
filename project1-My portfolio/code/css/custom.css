@@ -388,7 +388,7 @@
                     margin-bottom: 50px;
                 }
 
-                .footerabout h2 , h3 {
+                .footerabout  {
                     font-size: 2vw;
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     font-weight: 800;
@@ -403,7 +403,7 @@
                     margin-bottom: 50px;
                 }
 
-                .footerabout2 > h2 , h3 {
+                h2.footerabout2  {
                     font-size: 2vw;
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     font-weight: 800;
