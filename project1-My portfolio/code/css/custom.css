@@ -6,6 +6,7 @@
                     background-color: #3B2F2F;
                     height: 100px;
                     display: flex;
+                    flex-direction: row;
                 }
 
                 nav img {
@@ -21,7 +22,10 @@
                 }
 
                 .links {
-                    margin-right: 50px;
+                display: flex;
+                 flex-direction: row-reverse;
+                margin-right: 50px;
+                   
                 }
 
                 .links a {
@@ -30,6 +34,9 @@
                     font-family: Verdana;
                     font-weight: bold;
                     color: #F6F7F8;
+                }
+                .links a:nth-child(2){
+                    order: 1;
                 }
 
                 .links a:hover {
