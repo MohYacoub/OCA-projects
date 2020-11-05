@@ -1,37 +1,24 @@
-
-
-
-function calcNumbers(result){
-     form.displayResult.value = form.displayResult.value+result;
-
+function calcNumbers(result) {
+  form.displayResult.value = form.displayResult.value + result;
 }
 
-
-    $(document).ready(function(){
-    $("#ce").click(function(){
+$(document).ready(function () {
+  $("#ce").click(function () {
     $("#calcinput").val("");
-   });
+  });
 });
 
-
-$(document).ready(function(){
-
-$("#ABS").click(function(){
-$("#calcinput").val("number");
-});
+$(document).ready(function () {
+  $("#ABS").click(function () {
+    $("#calcinput").val("number");
+  });
 });
 
-
-
-
-$(document).ready(function(){
-
-$("#po").click(function(){
-
-$("#calcinput").val("power");
+$(document).ready(function () {
+  $("#po").click(function () {
+    $("#calcinput").val("power");
+  });
 });
-});
-
 
 /*$("#calcinput").val();
 function power() {
@@ -41,7 +28,6 @@ var x = document.getElementById("po").value;
 document.getElementById("calcinput").innerHTML = x;
 
 }*/
-
 
 // var x = document.getElementById('calcinput').value;
 // function factorial(x)
@@ -55,9 +41,6 @@ document.getElementById("calcinput").innerHTML = x;
 
 // }
 
-
-
-
 // fu = (n) =>{
 //    // var n = document.getElementById('calcinput').value;
 //     let answer = 1;
@@ -69,16 +52,15 @@ document.getElementById("calcinput").innerHTML = x;
 //          for(let i = 1; i<=n;i++){
 //             answer = answer * i;
 //          }
-//          n.value = answer;  
+//          n.value = answer;
 //          console.log(n)
-//     }   
-   
+//     }
+
 //       };
 
 //       fu(5);
 
-
-      //var x = 1;
+//var x = 1;
 // function rec() {
 //     var n = document.getElementById('calcinput').value;
 //     if (n == 0 || n == 1) {
@@ -90,33 +72,26 @@ document.getElementById("calcinput").innerHTML = x;
 //     }
 //    // return x;
 //   }
-  
-  
+
 //  console.log(rec());
 
+// function factorial(n)
+factorial = (n) => {
+  var n = document.getElementById("calcinput").value;
+  let answer = 1;
+  if (n === 0) {
+    return 1;
+  } else {
+    for (let i = 1; i <= n; i++) {
+      answer = answer * i;
+    }
+    //  return answer;
+    form.displayResult.value = answer;
+  }
+};
 
-
- // function factorial(n)
-factorial = (n) =>{
-    var n = document.getElementById('calcinput').value;
-    let answer = 1;
-        if (n === 0)
-       {
-          return 1;
-       }
-       else{
-         for(let i = 1; i<=n;i++){
-            answer = answer * i;
-         }
-        //  return answer;
-         form.displayResult.value = answer
-                 
-    }   
-      } 
-
-
-      // function absolute(n)
-      absolute = (n) => {
-        var n = document.getElementById('calcinput').value;
-        display.value = Math.abs(n);
-      }
+// function absolute(n)
+absolute = (n) => {
+  var n = document.getElementById("calcinput").value;
+  display.value = Math.abs(n);
+};
